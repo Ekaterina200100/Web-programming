@@ -1,0 +1,199 @@
+.block-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    left: 2%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 0px;
+    width: 100%;
+}
+
+.block-one__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+.block-one__text1 {
+    margin-top: 40px;
+    width: 166px;
+    height: 27px;
+    top: 190px;
+    left: 131px;
+    gap: 0px;
+    background-color: rgba(247, 247, 247, 0.5); /* Добавили прозрачность к светло-серой заливке */
+    border-radius: 15px; /* Закругленные углы */
+    padding: 10px; /* Добавляем внутренний отступ */
+    font-size: 18px;
+    line-height: 27px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.block-one__text2 {
+    width: 603px;
+    height: 249px;
+    top: 236px;
+    left: 100px;
+    gap: 0px;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 82.5px;
+    text-align: left;
+}
+
+.block-one__text3 {
+    margin-top: 40px;
+    color:rgba(247, 247, 247, 0.5);
+    width: 519px;
+    height: 76px;
+    top: 515px;
+    left: 100px;
+    opacity: 0.5px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: left;
+    gap: 0px;
+}
+
+.block-one__button {
+    margin-top: 70px;
+    width: 263px;
+    height: 91px;
+    top: 659px;
+    left: 100px;
+    max-width: 500%;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    color: white;
+    outline: 0;
+    border-radius: 25px;
+    border-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.block-one__right {
+    display: flex;
+}
+
+.block-one__image {
+    top: -12px;
+    left: 174px;
+    gap: 0px;
+}
+
+.block-two {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    color: #000000;
+    gap: 10px;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.block-two__left {
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+.image {
+    width: 478px;
+    height: 537px;
+    top: 1069px;
+    left: 156px;
+    gap: 0px;
+}
+
+.block-two__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-two__right_middle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-start;  
+}
+
+.block-two__right_middle_column_one {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;    
+}
+
+.block-two__right_middle_column_two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}  
+
+.block-two__text1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 67.5px;
+    text-align: left;
+}
+
+.block-two__text2 {
+    color: rgba(0, 0, 0);
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 49.5px;
+    text-align: left;
+    flex: 2;
+}
+
+.block-two__text3 {
+    margin-top: 20px;
+    color: rgba(75, 72, 72, 0.5);
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    flex: 2;
+}
+
+.block-two__text4 {
+    margin-top: 5%;
+    color: rgba(75, 72, 72, 0.5);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    text-align: left;
+}
+
+.block-two__avatar {
+    flex: 1;
+    width: 134px;
+    height: 134px;
+    border-radius: 100px;
+    background: #e66248;
+}
+
+.block-two__stars {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.block-two__star-image {
+    margin-right: 5px;
+    margin-top: 40px;
+    width: 59px;
+    height: 59px;
+    border-radius: 2px 0px 0px 0px;
+}
