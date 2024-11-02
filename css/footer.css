@@ -5,9 +5,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin-top: -20px; /* Сдвигаем футер на высоту отступа */
-  width: 100%;
+  margin: 0 auto;
+  width: 1440px;
 }
 
 .logo {
