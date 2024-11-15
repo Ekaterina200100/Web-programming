@@ -11,6 +11,7 @@ https://www.figma.com/design/TjjTlE5G2TS2RhcRPsPL6e/%D0%9B%D0%B0%D0%B1%D0%BE%D1%
 **Лабораторная работа № 4**
 
 Вариант 6
+
 Требуется сверстать карточку по макету
 https://www.figma.com/design/P4e5U2QniPD0KvU2xb7OFb/Cards?node-id=0-1&t=1ThO0xTkGhKoQt5v-1
 
