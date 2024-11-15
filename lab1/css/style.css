@@ -1,0 +1,19 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
+.poppins_medium {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.background_pic {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
