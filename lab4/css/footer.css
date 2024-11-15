@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  gap: 50px;
+}
+
+.footer__navBar__item {
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(0, 0, 0);
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  width: 128px;
+  height: 49px;
+}

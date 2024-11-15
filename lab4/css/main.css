@@ -1,0 +1,50 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 412px;
+    height: 569px;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: white;
+  }
+
+.card__image{
+    border-radius: 12px;
+    height: 359px;
+    width: 364px;
+}
+
+.card__title{
+    font-family: "Overpass", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 24px;
+}
+
+.card__text{
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.card__person{
+    display: flex;
+    margin-top: 24px;
+}
+
+.card__person__name{
+    font-family: "Overpass", sans-serif;
+    padding: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+
+}
+
+.card__person__avatar{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
