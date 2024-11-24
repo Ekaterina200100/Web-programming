@@ -1,0 +1,19 @@
+@import url("header.css");
+@import url("main.css");
+
+.background {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.poppins_medium {
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

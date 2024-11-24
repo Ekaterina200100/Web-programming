@@ -1,0 +1,288 @@
+.adaptive { /* Нужно для создания адаптивного макета */
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 7680px) { /* Когда ширина области просмотра составляет 7680 пикселей или меньше */
+    .entry_text-block {
+        margin-top: 30%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .entry_text__image {
+        width: 350px;
+        height: 556px;
+        position: absolute;
+        bottom: -25%;
+        right: -2%;
+    }
+    
+    .entry_text__text1 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .entry_text__text2 {
+        font-size: 35px;
+    }
+    
+    /* input */
+    input::placeholder { /* ::placeholder псевдоэлемент для оформления текста заполнителя */
+        color: #A7A3FF;
+        padding: 26px;
+      }
+    
+    input {
+        border: none;
+        color: #A7A3FF;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .sign_up_block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign_up_block__text1 {
+        
+        margin-left: -35%;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .input_lines__cred {
+        width: 359px;
+        height: 52px;
+        background: #F0EFFF;
+        border-radius: 8px;
+        margin: 8px;
+        padding: 5px;
+    }
+    
+    /* Password */
+    .sign_up_block__password-container {
+        position: relative;
+        width: 369px;
+      }
+      
+    .password-input {
+        width: 100%;
+        height: 62px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 10px 40px 10px 10px; /* Оставляем место для кнопки */
+        background: #F0EFFF;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Расстояние от правого края */
+        transform: translateY(-50%); /* Смещаем элемент по вертикальной оси (оси Y) */
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: #A7A3FF;
+        outline: none;
+        padding: 0;
+    }
+    
+    .toggle-password:hover { /* При наведении на глазик меняем его цвет на темнее */
+        color: #9691ff;
+    }
+    /* Password */
+
+    .register_button {
+        width: 369px;
+        height: 62px;
+        border-radius: 8px;
+        border: none;
+        margin: 20px;
+        margin-left:  8px;
+        margin-right: 8px;
+        padding: 10px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        background: #4D47C3;
+        box-shadow: 0px 4px 21px 0px #4D47C3;
+    }
+
+    .sign_up_block__text2 {
+        margin: 40px;
+        margin-left:  8px;
+        margin-right: 8px;
+        color: #B5B5B5;
+        font-size: 16px;
+    }
+    
+    .social__block {
+        width: 165px;
+        height: 41px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* input */
+}
+
+@media (max-width: 768px) { /* Когда ширина области просмотра составляет 768 пикселей или меньше */
+    .adaptive {
+        width: 375px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .entry_text-block {
+        margin-top: 10%;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .entry_text__image {
+        visibility: hidden;
+    }
+    
+    .entry_text__text1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    
+    .entry_text__text2 {
+        font-size: 21px;
+    }
+    
+    .entry_text__text3 {
+        font-size: 14px;
+    }
+    
+    /* input */
+    input::placeholder { /* ::placeholder псевдоэлемент для оформления текста заполнителя */
+        color: #A7A3FF; /* Красный цвет */
+        padding: 26px;
+      }
+    
+    input {
+        border: none;
+        color: #A7A3FF;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .sign_up_block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign_up_block__text1 {
+        visibility: hidden;
+        margin-top: -20 px;
+        margin-bottom: -20px;
+    }
+    
+    .input_lines__cred {
+        width: 305px;
+        height: 52px;
+        background: #F0EFFF;
+        border-radius: 8px;
+        margin: 8px;
+        padding: 5px;
+    }
+
+    /* Password */
+    .sign_up_block__password-container {
+        position: relative;
+        width: 315px;
+      }
+      
+    .password-input {
+        width: 100%;
+        height: 62px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 10px 40px 10px 10px; /* Оставляем место для кнопки */
+        background: #F0EFFF;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Расстояние от правого края */
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: #A7A3FF;
+        ;
+        outline: none;
+        padding: 0;
+    }
+    
+    .toggle-password:hover {
+        color: #9691ff;
+    }
+    /* Password */
+
+    .register_button {
+        width: 315px;
+        height: 62px;
+        border-radius: 8px;
+        border: none;
+        margin: 20px;
+        margin-left:  8px;
+        margin-right: 8px;
+        padding: 10px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        background: #4D47C3;
+        box-shadow: 0px 4px 21px 0px #4D47C3;
+    }
+
+    .sign_up_block__text2 {
+        margin: 8%;
+        margin-left:  8px;
+        margin-right: 8px;
+        color: #B5B5B5;
+        font-size: 16px;
+    }
+    
+    .social__block {
+        width: 165px;
+        height: 39px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    /* input */
+}
