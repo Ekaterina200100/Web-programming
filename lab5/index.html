@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Var 1</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!-- Коллекция векторных иконок -->
+  </head>
+
+  <div class="main">
+    <body class="background">
+      <header>
+        <div class="header__navBar poppins_medium">
+          <div class="header__navBar__logo">Your Logo</div>
+        </div>
+      </header>
+      
+      <main>
+        <div class="main adaptive poppins_medium">
+          <div class="entry_text-block">
+            <div class="entry_text__text1">Sign Up to</div>
+            <div class="entry_text__text2">Lorem Ipsum is simply</div>
+            <p class="entry_text__text3">If you already have an account <br> You can <a href="https://google.com" title="Let's login!" target="_blank">Login here !</a></p>
+            <img class="entry_text__image" src="./images/image.png" alt="image_entry_block"/>
+          </div>
+          <div class="sign_up_block">
+            <div class="sign_up_block__text1">Sign Up</div>
+            <input type="text" class="input_lines__cred" placeholder="Enter Email" required>
+            <input type="text" class="input_lines__cred" placeholder="Create User name" required>
+            <input type="tel"  class="input_lines__cred" placeholder="Contact number" required>
+        
+            <div class="sign_up_block__password-container">
+              <input type="password" id="password" class="password-input" placeholder="Password" required> <!-- Поля обязательны для заполнения -->
+              <button type="button" id="togglePassword" class="toggle-password">
+                <i class="fas fa-eye"></i> <!-- Для отображения иконки из библиотеки -->
+              </button>
+            </div>
+
+            <div class="sign_up_block__password-container">
+              <input type="password" id="сonfirmpassword" class="password-input" placeholder="Confirm password" required>
+              <button type="button" id="toggleconfirmPassword" class="toggle-password">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            <script src="index.js"></script> <!-- Подключаем файл index.js -->
+
+            <button class="register_button">Register</button>
+            <div class="sign_up_block__text2">or continue with</div>
+            <div class="social__block">
+              <a href="https://www.facebook.com/"><img src="images/social/Facebook.png" alt="Facebook"></a>
+              <a href="https://www.apple.com/"><img src="images/social/apple.png" alt="Apple"></a>
+              <a href="https://www.google.com/"><img src="images/social/google.png" alt="Google"></a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
+  </div>
+</html>
