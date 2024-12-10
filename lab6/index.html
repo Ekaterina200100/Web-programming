@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Шрифт Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Библиотека Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Скрипт для burger menu -->
+    <script>
+        function toggleMenu() {
+          const nav = document.querySelector('.header__nav');
+          nav.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+          <img class="header__logo-image" src="images/logo.png" alt="Agency Creative Logo">
+        </div>
+        <div class="header__burger" onclick="toggleMenu()">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="#" class="header__link">Home</a></li>
+            <li class="header__menu-item"><a href="#" class="header__link">About</a></li>
+            <li class="header__menu-item"><a href="#" class="header__link">Services</a></li>
+            <li class="header__menu-item"><a href="#" class="header__link">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="header__button">
+          <button type="button" class="header__contact-button">Contact Us</button>
+        </div>
+    </header>
+      
+    <!-- Main -->
+    <main class="main">
+        
+        <!-- Основной блок Dream Section -->
+        <section class="main__dream">
+            <!-- Заголовок секции -->
+            <h1 class="main__dream-title">Make your dream business goal come true</h1>
+            <!-- Подзаголовок -->
+            <p class="main__dream-subtitle">
+                When you need us to improve your business, then come with us to help your business have reach it. You just sit and feel that goal.
+            </p>
+            <!-- Кнопка для начала проекта -->
+            <button class="main__dream-button" type="button">Start Project</button>
+            <img class="main__dream-image" src="images/img_1_main_dream.png" alt="Dream team">
+        </section>
+
+        <section class="main__about">
+            <p class="main__about__subtitle">About Us</p>
+            <h1 class="main__about__title">Our Teammate</h1>
+            <div class="main__about__content">  
+              <div class="main__about__left">
+                <img class="main__about__image" src="images/img_2_main_about.png" alt="Dream team">
+              </div>
+              <div class="main__about__right">
+                <p class="main__text">
+                  We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
+                </p>
+                <p class="main__text">
+                  We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
+                </p>
+                <div class="main__about__buttons">
+                  <button class="main__about__button-white" type="button">About Us</button>
+                  <button class="main__about__button-black" type="button">
+                    <i class="fa fa-play button__icon" style="margin-right: 8px;"></i>
+                    <span>Our Story</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- Services Section -->
+        <section class="main__services">
+                <div class="main__services__left">
+                    <p class="main__services__subtitle">Our Services</p>
+                    <h1 class="main__services__title">Perfect and Fast Movement</h1>
+                    <p class="main__text">
+                        We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
+                    </p>
+                    <button class="main__services__button-black" type="button">
+                        <span>Read more</span>
+                        <i class="fa fa-arrow-right" style="margin-left: 8px;"></i>
+                    </button>
+                </div>
+                <div class="main__services__right">
+                    <div class="services__item">
+                        <img src="images/services/social_media.png" alt="Social Media Management" class="main__services__icon">
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services/search_engine.png" alt="Search Engine Optimization" class="main__services__icon">
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services/design.png" alt="Design" class="main__services__icon">
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services/ads.png" alt="Ads" class="main__services__icon">
+                    </div>
+                </div>            
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section class="main__portfolio">
+            <p class="main__portfolio__subtitle">Our Portfolio</p>
+            <h1 class="main__portfolio__title">What do we do</h1>
+            <p class="main__portfolio__text">
+                All projects that we have already done, proven can help to use more comfortable, then can used by client from our business.
+            </p>
+            <div class="main__portfolio__gallery">
+                <div class="portfolio__item">
+                    <img src="images/portfolio/img_1.png" alt="Design Byte App" class="portfolio__image">
+                </div>
+                <div class="portfolio__item">
+                    <img src="images/portfolio/img_2.png" alt="Cloud App" class="portfolio__image">
+                </div>
+                <div class="portfolio__item">
+                    <img src="images/portfolio/img_3.png" alt="Design Furniture App" class="portfolio__image">
+                </div>
+            </div>
+            <button class="main__portfolio__button-black" type="button">
+                <span>See All Portfolio</span>
+            </button>
+        </section>
+
+        <!-- Collaboration Section -->
+        <section class="main__collaboration">
+            <div>
+                <h1 class="main__collaboration__title">Interesting Collaboration With Us?</h1>
+                <p class="main__text">Help you to reach your business goal.</p>
+                <button class="main__collaboration__button-white" type="button">Aboout Us</button>
+            </div>
+            <div>
+                <img src="images/img_3_double_desk.png" alt="WorkWithUs" class="portfolio__image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <!-- Логотип -->
+            <div class="footer__info">
+                <img src="images/footer_logo.png" alt="Agency Creative Logo" class="footer__logo">
+            </div>
+            <!-- Terms & Policies и Company -->
+            <div class="footer__info__double_column">
+                <div>
+                    <h1 class="footer__title">Terms & policies</h1>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                </div>
+                <div>
+                    <h1 class="footer__title">Company</h1>
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">About Us</a>
+                    <a href="#" class="footer__link">Contact Us</a>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div>
+                <h1 class="footer__title">Contact</h1>
+                <a href="#" class="footer__link">(+62) 893912392190</a>
+                <a href="#" class="footer__link">agencycr@gmail.com</a>
+            </div>
+            <!-- Location -->
+            <div>
+                <h1 class="footer__title">Location</h1>
+                <a href="#" class="footer__link">PT Osiris Real Estate Internasional</a>
+                <a href="#" class="footer__link">Jl. KH. Wahid Hasyim Kel No.10D</a>
+                <a href="#" class="footer__link">Jakarta, Indonesia</a>
+                <a href="#" class="footer__link">team@OsirisRealEstate.com</a>
+            </div>
+        </div>
+        <!-- Социальные ссылки -->
+        <div class="footer__socials">
+            <a href="#" class="footer__social-link">
+                <img src="images/socials/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="images/socials/instagram.png" alt="Instagram">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="images/socials/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="images/socials/mail.png" alt="Mail">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="images/socials/twitter.png" alt="Twitter">
+            </a>
+        </div>
+        <p class="footer__text">____________________________________________</p>
+        <p class="footer__text">© 2022 Agency Creative. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
