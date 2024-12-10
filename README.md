@@ -4,7 +4,7 @@
 Верстка веб-сайта по макету
 https://www.figma.com/design/TjjTlE5G2TS2RhcRPsPL6e/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-1.-GoTrip?node-id=0-1&t=lLLdHwaurb3rg1wq-1
 
-Требование:
+Требования:
 1.	Верстка оформлена с использованием БЭМ (https://ru.bem.info/?ysclid=m2bux25dqd389666787)
 2.	Стили каждого модуль, например, header, footer и пр. оформлены в виде отдельного css-файла.
 3.	Используемые технологии: html, css.
@@ -17,7 +17,7 @@ https://www.figma.com/design/TjjTlE5G2TS2RhcRPsPL6e/%D0%9B%D0%B0%D0%B1%D0%BE%D1%
 Верстка карточки по макету
 https://www.figma.com/design/P4e5U2QniPD0KvU2xb7OFb/Cards?node-id=0-1&t=1ThO0xTkGhKoQt5v-1
 
-Требование:
+Требования:
 1.	Верстка оформлена с использованием БЭМ (https://ru.bem.info/?ysclid=m2bux25dqd389666787).
 2.	Стили каждого модуля, например, header, footer и пр. оформлены в виде отдельного css-файла.
 3.	Используемые технологии: html, css.
@@ -30,7 +30,7 @@ https://www.figma.com/design/P4e5U2QniPD0KvU2xb7OFb/Cards?node-id=0-1&t=1ThO0xTk
 Верстка карточки по форме
 https://www.figma.com/design/jeOPxB60ASk6J9tIZ94J05/Forms_2?node-id=0-1&t=8fnw7rsZvHOSOmLM-1
 
-Требование:
+Требования:
 1.	Верстка оформлена с использованием БЭМ (https://ru.bem.info/?ysclid=m2bux25dqd389666787)
 2.	Стили каждого модуля, например, header, footer и пр. оформлены в виде отдельного css-файла.
 3.	Используемые технологии: html, css, js.
@@ -44,7 +44,7 @@ https://www.figma.com/design/jeOPxB60ASk6J9tIZ94J05/Forms_2?node-id=0-1&t=8fnw7r
 Верстка адаптивного сайта
 https://www.figma.com/design/JqFihh13rH1vC6DfL29d3K/%D0%92%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-7?node-id=1-597&t=qYCt8BQKffjZWkTo-1
 
-Требование:
+Требования:
 1.	Верстка оформлена с использованием БЭМ (https://ru.bem.info/?ysclid=m2bux25dqd389666787)
 2.	Стили каждого модуля, например, header, footer и пр. оформлены в виде отдельного css-файла.
 3.	Используемые технологии: html, css, js.
