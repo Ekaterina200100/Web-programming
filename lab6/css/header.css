@@ -1,0 +1,141 @@
+/* Основной стиль header */
+.header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+  color: #E2E2E2;
+}
+
+/* Логотип */
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header__logo-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__logo-subtitle {
+  font-size: 14px;
+  color: #A5A5A5;
+}
+
+/* Меню */
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+/* Элементы меню */
+.header__menu-item {
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем внутренние отступы */
+}
+
+
+.header__link {
+  text-decoration: none;
+  color: #E2E2E2;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.header__link:hover {
+  color: #FFF;
+}
+
+/* Кнопка "Contact Us" */
+.header__contact-button {
+  background-color: transparent;
+  color: #E2E2E2;
+  border: 2px solid #E2E2E2;
+  border-radius: 24px;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header__contact-button:hover {
+  background-color: #E2E2E2;
+  color: #1c1c1c;
+}
+
+/* Бургер-меню */
+.header__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #E2E2E2;
+  transition: all 0.3s ease;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header__nav {
+    display: none; /* Скрываем меню по умолчанию */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    flex-direction: column; /* Выстраиваем меню в столбец */
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .header__burger {
+    display: flex; /* Показываем бургер-меню */
+  }
+
+  .header__button {
+    display: none; /* Прячем кнопку "Contact Us" */
+  }
+
+  .header__menu {
+    display: flex; /* Используем flex-контейнер */
+    flex-direction: column; /* Располагаем элементы списка в столбец */
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* Расстояние между элементами */
+  }
+
+  .header__menu-item {
+    margin: 0; /* Убираем внешние отступы */
+  }
+
+  .header__nav.active {
+    display: flex; /* Показываем меню, когда активное */
+  }
+}

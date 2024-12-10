@@ -1,0 +1,542 @@
+/* Основной наш main */
+.main {
+    display: flex;
+    flex-direction: column; /* Располагаем блоки в столбец */
+    gap: 40px; /* Расстояние между секциями */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 0 100px; /* Отступы 100px слева и справа */
+}
+
+.main__text {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* Секции внутри main */
+
+/* main_dream */
+/* Основной контейнер секции main__dream */
+.main__dream {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в столбец */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    justify-content: center; /* Центрируем элементы по вертикали */
+    text-align: center; /* Текст выравнивается по центру */
+    background-color: transparent; /* Фон секции */
+}
+
+/* Заголовок секции */
+.main__dream-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 64px; /* Размер шрифта */
+    font-weight: 800; /* Жирный шрифт */
+    line-height: 87px; /* Межстрочный интервал */
+    letter-spacing: 0.01em; /* Межбуквенное расстояние */
+    color: #fff; /* Белый цвет текста */
+    max-width: 765px; /* Максимальная ширина текста */
+    margin: 0 auto 20px; /* Центрирование и нижний отступ */
+}
+
+/* Подзаголовок секции */
+.main__dream-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px; /* Размер шрифта */
+    font-weight: 400; /* Обычный вес шрифта */
+    line-height: 30px; /* Межстрочный интервал */
+    letter-spacing: 0.01em; /* Межбуквенное расстояние */
+    color: #d0d0d0; /* Светло-серый цвет текста */
+    max-width: 600px; /* Максимальная ширина текста */
+    margin: 0 auto 30px; /* Центрирование и нижний отступ */
+}
+
+/* Кнопка секции */
+.main__dream-button {
+    display: flex; /* Используем Flexbox для центровки текста */
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    width: 201px; /* Фиксированная ширина */
+    height: 48px; /* Фиксированная высота */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px; /* Размер текста */
+    font-weight: 700; /* Жирный текст */
+    line-height: 24px; /* Межстрочный интервал */
+    color: #000; /* Черный цвет текста */
+    background-color: #fff; /* Белый фон кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 30px; /* Скругленные углы */
+    cursor: pointer; /* Курсор в виде руки */
+    transition: all 0.3s ease; /* Анимация при наведении */
+    box-shadow: 0 4px 8px rgba(55, 125, 255, 0.5); /* Тень */
+}
+
+/* Состояние при наведении */
+.main__dream-button:hover {
+    background-color: #f0f0f0; /* Светлый фон при наведении */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3); /* Более выраженная тень */
+}
+
+/* Изображение секции */
+.main__dream-image {
+    max-width: 100%; /* Изображение адаптируется под ширину контейнера */
+    height: auto; /* Пропорциональное изменение высоты */
+    margin-top: 30px; /* Отступ сверху */
+}
+/* main_dream */
+
+/* main_about */
+/* Основной контейнер секции About Us */
+.main__about {
+    display: flex; /* Используем Flexbox для выравнивания элементов */
+    flex-direction: column;
+    align-items: center; /* Центрирование контента */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+/* Заголовок "About Us" */
+.main__about__subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #E2E2E2; /* Светло-серый цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Крупный заголовок "Our Teammate" */
+.main__about__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFF; /* Белый цвет текста */
+    text-align: center; /* Центрирование текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Контейнер с изображением и текстом */
+.main__about__content {
+    display: flex; /* Flexbox для размещения изображений и текста */
+    flex-direction: row; /* В строку для десктопа */
+    align-items: center; /* Центрирование по вертикали */
+    gap: 40px; /* Пространство между колонками */
+}
+
+/* Левая часть с изображением */
+.main__about__left {
+    flex: 1; /* Равное деление пространства */
+}
+
+.main__about__image {
+    width: 100%; /* Изображение адаптивно занимает весь контейнер */
+}
+
+/* Правая часть с текстом */
+.main__about__right {
+    flex: 1; /* Равное деление пространства */
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left; /* Текст выравнивается по левому краю */
+    max-width: 500px; /* Ограничение ширины для лучшего чтения */
+}
+
+/* Кнопки */
+.main__about__buttons {
+    display: flex; /* Flexbox для размещения кнопок в строку */
+    justify-content: flex-start; /* Выравнивание кнопок влево */
+    gap: 20px; /* Расстояние между кнопками */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Кнопка "About Us" */
+.main__about__button-white {
+    display: flex; /* Flexbox для выравнивания текста */
+    align-items: center; /* Центрирование текста по вертикали */
+    justify-content: center; /* Центрирование текста по горизонтали */
+    width: 150px;
+    height: 48px;
+    background-color: #FFF; /* Белый фон */
+    color: #000; /* Черный текст */
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 24px; /* Скругленные углы */
+    box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5); /* Тень кнопки */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main__about__button-white:hover {
+    background-color: #F0F0F0; /* Светлый фон при наведении */
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5); /* Больше тени при наведении */
+}
+
+/* Кнопка "Our Story" */
+.main__about__button-black {
+    display: flex;
+    align-items: center; /* Центрирование иконки и текста */
+    justify-content: center;
+    width: 210px;
+    height: 48px;
+    background-color: transparent; /* Прозрачный фон */
+    color: #E2E2E2; /* Светло-серый текст */
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #E2E2E2; /* Светлая рамка */
+    border-radius: 24px; /* Скругленные углы */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main__about__button-black:hover {
+    background-color: #E2E2E2; /* Светлый фон при наведении */
+    color: #1C1C1C; /* Темный текст при наведении */
+}
+
+/* Иконка в кнопке */
+.button__icon {
+    margin-right: 8px; /* Отступ справа от иконки */
+}
+
+/* Для адаптации секции на мобильных устройствах */
+@media (max-width: 768px) {
+    .main__about {
+        display: flex;
+        flex-direction: column; /* Элементы секции в столбик */
+        align-items: center; /* Центрирование всех элементов */
+    }
+
+    .main__about__subtitle {
+        order: 1; /* Первый элемент - Подзаголовок */
+    }
+
+    .main__about__title {
+        order: 2; /* Второй элемент - Заголовок */
+    }
+
+    .main__about__content {
+        display: flex;
+        flex-direction: column; /* Внутренний контент в столбик */
+        align-items: center; /* Центрирование текста и кнопок */
+        text-align: center;
+        gap: 10px; /* Расстояние между элементами */
+        order: 3; /* Контейнер контента идет после заголовка */
+    }
+
+    .main__about__right .main__text {
+        order: 3; /* Текст располагается первым внутри контента */
+    }
+
+    .main__about__buttons {
+        order: 4; /* Кнопки идут после текста */
+        justify-content: center; /* Центрирование кнопок */
+    }
+
+    .main__about__left {
+        order: 5; /* Картинка идет последней */
+    }
+}
+
+/* main_about */
+
+/* main_services */
+
+/* Основной контейнер секции Our Services */
+.main__services {
+    display: flex; /* Flexbox для размещения изображений и текста */
+    flex-direction: row; /* В строку для десктопа */
+    gap: 40px; /* Пространство между колонками */
+}
+
+.main__services__left {
+    text-align: left;
+    display: flex; /* Flexbox для содержимого */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    align-items: flex-start; /* Выравниваем все элементы по левому краю */
+    gap: 5px; /* Пространство между элементами */
+    position: relative; /* Задаём относительное позиционирование для блока */
+}
+
+/* Заголовок "About Us" */
+.main__services__subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #E2E2E2; /* Светло-серый цвет текста */
+}
+
+/* Крупный заголовок "Our Teammate" */
+.main__services__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFF; /* Белый цвет текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.main__services__button-black {
+    background-color: transparent; /* Прозрачный фон */
+    color: #E2E2E2; /* Светло-серый текст */
+    font-size: 16px; /* Размер текста */
+    font-weight: 700; /* Жирность текста */
+    border: transparent; /* Прозрачная рамка */
+    border-radius: 24px; /* Скругленные углы кнопки */
+    cursor: pointer; /* Указатель-рука при наведении */
+    margin-left: auto; /* Отодвигаем кнопку вправо */
+}
+
+/* Контейнер для элементов справа */
+.main__services__right {
+    display: grid; /* Используем grid для упрощения позиционирования элементов */
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px; /* Пространство между карточками */
+}
+
+/* Карточка услуги */
+.services__item {
+    display: flex; /* Flexbox для позиционирования содержимого */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    width: 269px; /* Ширина карточки */
+    height: 269px; /* Высота карточки */
+    border-radius: 30px; /* Скругление углов */
+    border: 1px solid transparent; /* Прозрачная рамка */
+    background-color: transparent; /* Прозрачный фон */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Плавные переходы */
+    cursor: pointer; /* Указатель-рука при наведении */
+}
+
+/* Эффект при наведении на карточку */
+.services__item:hover {
+    background-color: #0B0F15; /* Изменение фона на затемнённый */
+    border-color: #E2E2E2; /* Появление светлой рамки */
+}
+
+/* Для адаптации секции на мобильных устройствах */
+@media (max-width: 768px) {
+    .main__services {
+        flex-direction: column; /* Перестраиваем секцию в столбец */
+        gap: 20px; /* Уменьшаем расстояние между блоками */
+    }
+    
+    /* Заголовок "About Us" */
+    .main__services__subtitle {
+        margin: 0 auto; /* Выравниваем по центру */
+    }
+
+    .main__services__right {
+        grid-template-columns: 1fr; /* Одна колонка для мобильных устройств */
+        justify-items: center; /* Центрирование карточек */
+    }
+
+    .services__item {
+        width: 90%; /* Адаптивная ширина для мобильных устройств */
+        height: auto; /* Автоматическая высота */
+    }
+    .main__services__button-black   {
+        margin-left: 0;
+    }
+}
+/* main_services */
+
+/* Our Portfolio */
+/* Общий контейнер секции */
+.main__portfolio {
+    text-align: center; /* Центрируем текст внутри секции */
+    padding: 50px 20px; /* Отступы внутри секции */
+    background-color: transparent; /* Фон секции */
+    color: #E2E2E2; /* Цвет текста */
+}
+
+/* Подзаголовок секции */
+.main__portfolio__subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #E2E2E2; /* Светло-серый цвет текста */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+/* Заголовок секции */
+.main__portfolio__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFF; /* Белый цвет текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Описание секции */
+.main__portfolio__text {
+    font-size: 16px; /* Размер текста */
+    line-height: 1.5; /* Межстрочный интервал */
+    max-width: 600px; /* Максимальная ширина текста */
+    margin: 0 auto 40px auto; /* Центрирование и отступ снизу */
+    color: #BFBFBF; /* Светло-серый текст */
+}
+
+/* Галерея */
+.main__portfolio__gallery {
+    display: flex; /* Выравниваем элементы в строку */
+    justify-content: space-between; /* Равномерное распределение фотографий */
+    gap: 0; /* Убираем внутренний зазор между элементами (если не нужен) */
+    margin-bottom: 40px; /* Отступ снизу */
+    flex-wrap: wrap; /* Разрешаем перенос строк для адаптивности */
+}
+
+
+/* Элемент галереи */
+.portfolio__item {
+    position: relative; /* Для корректной работы абсолютного позиционирования */
+    overflow: hidden; /* Скрываем элементы за границами */
+    width: 350px; /* Фиксированная ширина */
+    height: 350px; /* Фиксированная высота */
+    border-radius: 16px; /* Скругленные углы */
+    transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+.portfolio__item:hover {
+    transform: scale(1.1); /* Увеличение элемента при наведении */
+}
+
+/* Изображение внутри галереи */
+.portfolio__image {
+    display: block; /* Убираем нижние отступы, свойственные inline-элементам */
+    width: 100%; /* Изображение растягивается на всю ширину контейнера */
+    height: 100%; /* Изображение растягивается на всю высоту контейнера */
+    object-fit: cover; /* Содержимое масштабируется и обрезается, чтобы заполнить контейнер */
+}
+
+/* Кнопка */
+.main__portfolio__button-black {
+    display: inline-flex; /* Централизуем текст и иконку */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+    width: 210px;
+    height: 48px;
+    margin: 0 auto; /* Центрируем кнопку */
+    background-color: transparent; /* Прозрачный фон */
+    color: #E2E2E2; /* Светло-серый текст */
+    font-size: 16px; /* Размер текста */
+    font-weight: 700; /* Жирный текст */
+    border: 2px solid #E2E2E2; /* Светлая рамка */
+    border-radius: 24px; /* Скругленные углы */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация при наведении */
+}
+
+.main__portfolio__button-black:hover {
+    background-color: #E2E2E2; /* Светлый фон при наведении */
+    color: #1C1C1C; /* Темный текст при наведении */
+}
+
+@media (max-width: 768px) {
+    .main__portfolio__gallery {
+        display: grid; /* Используем Grid вместо Flexbox */
+        grid-template-columns: 1fr; /* Один элемент в строку */
+        gap: 15px; /* Расстояние между элементами */
+    }
+
+    .portfolio__item {
+        width: 100%; /* Элемент занимает всю ширину контейнера */
+        aspect-ratio: 1 / 1; /* Поддержка квадратной формы */
+        border-radius: 16px; /* Скругленные углы остаются */
+    }
+
+    .portfolio__image {
+        width: 100%; /* Изображение занимает всю ширину элемента */
+        height: 100%; /* Изображение заполняет высоту элемента */
+        object-fit: cover; /* Обрезка для заполнения контейнера */
+    }
+}
+
+
+/* Our portfolio */
+
+/* Collaborate section */
+
+/* Основной контейнер */
+.main__collaboration {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row; /* Горизонтальное расположение для десктопа */
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Текстовый блок */
+.main__collaboration__title {
+    font-size: 55px;
+    font-weight: bold;
+    color: #FFF;
+    margin: 0 0 10px 0;
+}
+
+.main__text {
+    font-size: 18px;
+    color: #E2E2E2;
+    margin: 0 0 20px 0;
+}
+
+/* Кнопка */
+.main__collaboration__button-white {
+    width: 193px;
+    height: 48px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 24px;
+    box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main__collaboration__button-white:hover {
+    background-color: #F0F0F0;
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Изображение */
+.portfolio__image {
+    max-width: 100%; /* Адаптация изображения */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .main__collaboration {
+        display: flex;
+        flex-direction: column-reverse; /* Вертикальное расположение для мобильной версии */
+        align-items: center; /* Центрирование всех объектов по горизонтали */
+        text-align: center; /* Выравнивание текста по центру */
+        gap: 20px; /* Расстояние между элементами */
+        padding: 20px; /* Добавляем отступы */
+    }
+
+    .portfolio__image {
+        width: 100%; /* Изображение занимает всю ширину */
+        height: auto; /* Сохранение пропорций */
+        margin-bottom: 20px; /* Отступ между изображением и текстом */
+    }
+
+    .main__collaboration__button-white {
+        width: 150px; /* Уменьшаем размер кнопки */
+        height: 38px;
+        font-size: 14px;
+        text-align: center; /* Центрирование текста внутри кнопки */
+    }
+
+    .main__text {
+        margin-bottom: 15px; /* Отступ между текстом и кнопкой */
+    }
+}
+/* Collaborate section */

@@ -1,0 +1,115 @@
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #383638; /* Цвет фона */
+    color: #FFF; /* Цвет текста */
+    padding: 40px 20px; /* Отступы внутри */
+    margin: 0; /* Убираем внешние отступы */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between; /* Распределение пространства */
+    align-items: flex-start;
+    gap: 20px; /* Расстояние между блоками */
+    flex-wrap: wrap; /* Для адаптивности */
+}
+
+.footer__info {
+    flex-grow: 2; /* Логотип занимает 2 части */
+    min-width: 200px; /* Минимальная ширина */
+    text-align: center;
+}
+
+.footer__info__double_column {
+    flex-grow: 1; /* Terms & Policies и Company занимают 1 часть */
+    min-width: 300px; /* Минимальная ширина для двойной колонки */
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Разделение между столбцами */
+}
+
+.footer__content > div:not(.footer__info):not(.footer__info__double_column) {
+    flex-grow: 1; /* Contact и Location занимают 1 часть */
+    min-width: 200px; /* Минимальная ширина */
+}
+
+.footer__logo {
+    width: 187px;
+    height: auto;
+    background-color: #E2E2E2; /* Фон логотипа */
+    padding: 10px;
+    border-radius: 8px; /* Скругленные углы */
+}
+
+.footer__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    display: block; /* Каждая ссылка с новой строки */
+    color: #FFF;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #E2E2E2;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.footer__social-link img {
+    width: auto;
+    height: auto;
+}
+
+.footer__social-link:hover {
+    background-color: #666;
+}
+
+.footer__text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Адаптивная версия */
+@media (max-width: 768px) {
+    .footer__content {
+        margin-left: 10%;
+        flex-direction: column;
+    }
+    
+    .footer__info__double_column{
+        gap: 10%;
+        display: flex;
+    }
+
+    .footer__socials {
+        margin-top: 5%;
+        flex-wrap: wrap;
+    }
+}
